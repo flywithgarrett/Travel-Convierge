@@ -4,19 +4,19 @@ import "./globals.css";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
-  variable: "--font-inter",
+  variable: "--font-geist",
   weight: "100 900",
 });
 
 export const metadata: Metadata = {
-  title: "FlyWithGarrett | Private Aviation & Travel Concierge",
+  title: "Axiom Concierge | Private Aviation & Lifestyle Management",
   description:
-    "Elite travel concierge by Garrett Ray. Private aviation, global security, and bespoke itineraries crafted for those who refuse to travel ordinary.",
+    "Axiom Concierge delivers unified lifestyle management — private aviation, global security, and bespoke itinerary architecture for discerning principals.",
   openGraph: {
-    title: "FlyWithGarrett | Private Aviation & Travel Concierge",
+    title: "Axiom Concierge",
     description:
-      "Elite travel concierge by Garrett Ray. Private aviation, global security, and bespoke itineraries.",
-    siteName: "FlyWithGarrett",
+      "Private aviation, global security, and bespoke itinerary architecture.",
+    siteName: "Axiom Concierge",
   },
 };
 
@@ -35,12 +35,12 @@ export default function RootLayout({
           crossOrigin="anonymous"
         />
         <link
-          href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+          href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Inter:wght@100..900&display=swap"
           rel="stylesheet"
         />
       </head>
       <body
-        className={`${geistSans.variable} font-sans antialiased bg-black text-white`}
+        className={`${geistSans.variable} font-sans antialiased`}
       >
         {children}
       </body>

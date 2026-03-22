@@ -9,22 +9,22 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        midnight: {
+          DEFAULT: "#0a0a12",
+          light: "#12121e",
+          lighter: "#1a1a2a",
+        },
+        foreground: "#e5e5e5",
         emerald: {
           electric: "#39FF14",
-          glow: "#32e612",
-          deep: "#2bcc10",
         },
       },
       fontFamily: {
-        sans: ["Inter", "var(--font-inter)", "system-ui", "sans-serif"],
+        serif: ['"EB Garamond"', "Georgia", "serif"],
+        sans: ["Inter", "var(--font-geist)", "system-ui", "sans-serif"],
       },
       letterSpacing: {
-        tightest: "-0.06em",
-      },
-      backdropBlur: {
-        glass: "24px",
+        tightest: "-0.04em",
       },
     },
   },
