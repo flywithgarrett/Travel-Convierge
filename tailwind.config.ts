@@ -11,10 +11,10 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
-        gold: {
-          400: "#d4af37",
-          500: "#c5a028",
-          600: "#b8960f",
+        lime: {
+          400: "#b4f481",
+          500: "#9ee068",
+          600: "#88cc52",
         },
       },
       fontFamily: {
