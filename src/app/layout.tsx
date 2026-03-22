@@ -9,9 +9,15 @@ const geistSans = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Travel Concierge | The All-In-One Travel Platform",
+  title: "FlyWithGarrett | Private Aviation & Travel Concierge",
   description:
-    "Your personal luxury travel concierge. Discover curated destinations, bespoke itineraries, and exclusive experiences.",
+    "Elite travel concierge by Garrett Ray. Private aviation, global security, and bespoke itineraries crafted for those who refuse to travel ordinary.",
+  openGraph: {
+    title: "FlyWithGarrett | Private Aviation & Travel Concierge",
+    description:
+      "Elite travel concierge by Garrett Ray. Private aviation, global security, and bespoke itineraries.",
+    siteName: "FlyWithGarrett",
+  },
 };
 
 export default function RootLayout({
@@ -23,13 +29,19 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="anonymous"
+        />
         <link
           href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
           rel="stylesheet"
         />
       </head>
-      <body className={`${geistSans.variable} font-sans antialiased bg-black text-white`}>
+      <body
+        className={`${geistSans.variable} font-sans antialiased bg-black text-white`}
+      >
         {children}
       </body>
     </html>

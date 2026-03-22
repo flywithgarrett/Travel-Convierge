@@ -11,14 +11,20 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
-        lime: {
-          400: "#b4f481",
-          500: "#9ee068",
-          600: "#88cc52",
+        emerald: {
+          electric: "#39FF14",
+          glow: "#32e612",
+          deep: "#2bcc10",
         },
       },
       fontFamily: {
         sans: ["Inter", "var(--font-inter)", "system-ui", "sans-serif"],
+      },
+      letterSpacing: {
+        tightest: "-0.06em",
+      },
+      backdropBlur: {
+        glass: "24px",
       },
     },
   },
